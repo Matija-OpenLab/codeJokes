@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* INTOR SCREEN */
+
+.introContainer {
+    background-color: black;
+    height: 100vh;
+}
+
+
+.logo {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.pageTitle {
+    color: white;
+    font-size: 8em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.pageTitle .orangeText {
+    color: #f72509;
+}
+
+.arrow {
+    font-size: 100px;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: down 1s infinite;
+}
+
+/* JOKE SCREEN */
+
+.contentContainer {
+    background-color: white;
+    height: 90vh;
+    position: relative;
+}
+
+.jokeSetup,
+.jokePunchLine {
+    color: black;
+    font-size: 2em;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    position: relative;
+}
+
+.jokeSetup {
+    top: 30%;
+    left: 50%;
+
+}
+
+.jokePunchLine {
+    top: 50%;
+    left: 50%;
+}
+
+.buttonRow {
+    bottom: 20%;
+    left: 43%;
+    text-align: center;
+    position: absolute;
+}
+
+/* SAVED JOKES */
+
+.savedJokes {
+    height: 100vh;
+    border-top: 2px solid black;
+}
+
+.savedJokes h1 {
+    font-size: 4rem;
+    padding-top: 2rem;
+    text-align: center;
+}
+
+.jokeContainer {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.jokeContainer p {
+    padding: 1.5rem;
+}
+
+/* ANIMATING */
+
+@keyframes down {
+
+    0%,
+    100% {
+        top: 80%;
+    }
+
+    50% {
+        top: 90%;
+    }
+}
